@@ -1,0 +1,17 @@
+Feature: Verify in Vehicles for rent and cars suv trucks and vans for AWD & 4x4 Cars 4-8 people 3-7 Bags
+
+Scenario: Page should display "Looking for a rental car that offers more road capability? Browse our selection of AWD and 4x4 rental cars for your next adventure. Whether you're traveling for business or taking a family vacation, our selection of all-wheel drive and 4x4 vehicles will help you you there now."
+Given the user logs in successfully in the homepage
+"https://www.enterprise.com/en/home.html"
+Then user verifies if "Vehicles" is displayed on the page
+User clicks on "Vehicles" and page should load a drop down menu
+Under the drop down, "VEHICLES FOR RENT" should be displayed with "Cars, SUVs, Trucks & Vans" link
+User clicks on the "Cars, SUVs, Trucks & Vans"
+Then page should display "Compare Rental Car Sizes and Classes"
+Under the page "AWD & 4x4 Cars" option should be available with the ""Looking for a rental car that offers more road capability? Browse our selection of AWD and 4x4 rental cars for your next adventure. Whether you're traveling for business or taking a family vacation, our selection of all-wheel drive and 4x4 vehicles will help you you there now." description.
+User clicks on the "AWD & 4x4 Cars" option
+Then page should load all AWD & 4x4 cars available
+Then page should display the amount of people that can fit in the car, with a minimum of 4 and a maximum of 8 people.
+
+
+
